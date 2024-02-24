@@ -1,100 +1,388 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* originally here: body, h1, table, th td */
-        body { 
-            background-color: #d4e5f1;
-            font-family: 'Nunito', sans-serif;
-        } 
-        header {
-            background-color: #a7acb2; /* Dark Blue */
-            color: #ecf0f1; /* Light Gray */
-            text-align: center;
-            padding: 20px;
-        }
-        section {
-            background-color: #b3d9f2; /* Light Blue */
-            padding: 20px;
-        }
-        h1, h4, h3 {
-            font-family: Verdana;
-            color: #4c5966; /* Dark Blue */
-        }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            margin-top: 20px;
-        }
-        th, td {
-            border: 0.5px solid #7f7c7c; /* Add borders to th and td */
-            padding: 8px;
-            text-align: left;
-            font-family: 'Nunito', sans-serif; /* Align font with th */
-        }
-        .project-link {
-            color: #3498db; /* Blue */
-        }
-    </style>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="templatemo">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Olukorede (Korede) Ogundele</title>
+<!--
+Stimulus Template
+http://www.templatemo.com/tm-498-stimulus
+-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/templatemo-style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
-<h1>Olukorede (Korede) Ogundele</h1>
 
-<h4>
-    Hello! I’m Korede, a soon-to-be graduate in Molecular Science and Software Engineering with 3 years of molecular biology experience.
-    I'm eager to apply my combined experience in machine learning and data science to accelerate innovation within the molecular sciences.
-    I am actively seeking roles where I can leverage my academic foundation and practical experience to contribute to meaningful research and development.
-</h4>
+<!-- PRE LOADER -->
 
-<h1>  </h1>
-<h1>  </h1>
+<div class="preloader">
+     <div class="spinner">
+          <span class="spinner-rotate"></span>
+     </div>
+</div>
 
-<h3> PROJECTS </h3>
-<table>
-    <thead>
-    <tr>
-        <th> Individual Project - Molecular Energy Prediction </th>
-        <th> Air Quality Prediction Across the USA</th>
-    </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td> In this individual project, I engineered two deep learning models—an Artificial Neural Network (ANN) and a Residual Neural Network—specifically designed for predicting molecular energies within the ANI1 dataset. To enhance the models' understanding of molecular structures, I employed the Many Body Tensor Representation, a method encoding structures through a distribution of various structural motifs. Leveraging Python packages, including numpy, scikit-learn, and PyTorch, implemented and fine-tuned both the ANN and ResNet models.  <a href="https://github.com/koreogundele/chem277b-final-project">View GitHub repository</a></td>
-            <td> As an active participant in a collaborative team effort, I played a key role in modeling air quality across US counties, employing a combination of data analysis and machine learning techniques, notably linear regression. My responsibilities included data cleaning, thorough analysis, and the construction of a linear regression model. This contribution enhanced model accuracy by 5%. Leveraging Python libraries such as NumPy, Pandas, seaborn, matplotlib, and scikit-learn, my team successfully conducted a comprehensive analysis of emission data. The application of these tools allowed for the development of a predictive air quality model, providing valuable insights for environmental monitoring. <a href="https://github.com/EnviroTechSean/TeamPunchParty">View GitHub repository</a></td>
-        </tr>
-    <thead>
-    <tr>
-            <th> Cellular Automata Model in C++ </th>
-            <th> Monte Carlo Simulation Project </th>
-        </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td> To delve into the dynamics of changing allele frequencies in a population, I embarked on a collaborative project where we designed and implemented a C++ cellular automata model. Working effectively with classmates, I utilized Python libraries (seaborn, matplotlib) to create insightful visualizations that enriched the project. This journey not only deepened my understanding of population genetics and computational modeling techniques but also honed my programming skills in diverse languages (C++, Python) and strengthened my ability to collaborate effectively and present research findings persuasively.  <a href="insert link">ADD LINK</a></td>
-                <td> In this bootcamp project, we implemented a Monte Carlo simulation using various Python libraries and C++ and compared their performances. <a href="insert link">ADD LINK</a></td>
-            </tr>
-    </tbody>
-    <thead>
-        <tr>
-                <th> Machine Learning & Deep Learning Repository </th>
-                <th> C++ Data Structures and Algorithms </th>
-            </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td> During my machine learning class, I explored a diverse range of machine learning and deep learning algorithms in personal projects, including steepest descent, conjugate gradients, simulated annealing, clustering, ANNs, ResNets, RNNs, and LSTMs. Within this repository, I showcased practical skills by developing and implementing models, applying techniques like cross-entropy loss, Bayes theorem, and regularization for optimal performance. This portfolio underscores my understanding of various machine learning approaches and the versatility to apply them to different problems, emphasizing proficiency in algorithm implementation and model optimization.  <a href="insert link">MAKE THE REPO</a></td>
-                    <td> Within this C++ repository, you'll find an array of sorting and graph theory algorithms, as well as some data structures. <a href="insert link">MAKE THE REPO</a></td>
-                </tr>
-        </tbody>
-</table>
 
-<h1>  </h1>
-<h1>  </h1>
+<!-- Navigation Section -->
+<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+     <div class="container">
 
-<h3> View my full resume here: <a href="https://docs.google.com/document/d/1g15s1OD1anm49mspWSys40d_RPMyZuY5/edit#heading=h.gjdgxs"> Olukorede's Resume</a> </h3>
+          <!-- navbar header -->
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <!-- <a href="#" class="navbar-brand">Stimulus</a> -->
+          </div>
+
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-left">
+                    <li><h2 class="smoothScroll"> Olukorede (Korede) Ogundele</h2></li>
+                    </ul>
+               <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home" class="smoothScroll">Home</a></li>
+                    <li><a href="#about" class="smoothScroll">Projects</a></li>
+                    <li><a href="#experience" class="smoothScroll">Education & Experience</a></li>
+                    <li><a href="#contact" class="smoothScroll">Contact Info</a></li>
+               </ul>
+          </div>
+
+     </div>
+</div>
+
+
+<!-- Home Section -->
+
+<section id="home" class="parallax-section">
+     <div class="container">
+          <div class="row">
+               <div class="col-md-6 col-sm-6">
+                    <div class="home-img"></div>
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="home-thumb">
+                         <div class="section-title">
+                              <!-- <h4 class="wow fadeInUp" data-wow-delay="0.1s">welcome to my website!</h4> -->
+                              <h1 class="wow fadeInUp" data-wow-delay="0.2s">Hello! My name is  <strong>Korede</strong> and I'm a master's student at UC Berkeley.</h1>
+                              <p class="wow fadeInUp" data-wow-delay="0.3s">With three years of molecular science research experience and upcoming completion of a Master's degree in Molecular Science and Software Engineering from UC Berkeley, I have a unique blend of scientific knowledge and technical experience.</p>
+                              
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-12">
+                    <div class="about-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                              <h1>Projects</h1>
+                         </div>
+                       <div class="wow fadeInUp" data-wow-delay="0.4s">
+                              <p>I've taken part in several projects, both individual and collaborative. Below are descriptions and links to GitHub repositories of each one.</p>
+                              <p> Feel free to reach out to me if you'd like to learn more about my work!</p>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="col-md-3 col-sm-6">
+                    <div class="background-image about-img"></div>
+               </div>
+
+               <!-- SKILLS SECTION -->
+               <div class="bg-yellow col-md-3 col-sm-6">
+                    <div class="skill-thumb">
+                         <div class="wow fadeInUp section-title color-white" data-wow-delay="1.5s">
+                              <h1>Skills</h1>
+                         </div>
+                         <div class=" wow fadeInUp skills-thumb" data-wow-delay="1.5s">
+                         <strong>Python (NumPy, Pandas, Scikit-learn, TensorFlow, PyTorch, Seaborn, Matplotlib)</strong></div>
+                         <div class=" wow fadeInUp skills-thumb" data-wow-delay="1.5s">
+                         <strong>C++</strong></div>
+                         <div class=" wow fadeInUp skills-thumb" data-wow-delay="1.5s">
+                         <strong>Git/GitHub</strong></div>
+                         <div class=" wow fadeInUp skills-thumb" data-wow-delay="1.5s">
+                         <strong>Data cleaning, analysis and visualization</strong></div>
+                         <div class=" wow fadeInUp skills-thumb" data-wow-delay="1.5s">
+                         <strong>Next-generation sequencing, aseptic technique, PCR, gel electrophoresis</strong></div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</section>
+
+
+<!-- Service Section -->
+
+<section id="service" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="bg-yellow col-md-3 col-sm-6">
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.8s">
+                         <i class="fa fa-desktop"></i>
+                              <h3>Individual Project - Molecular Energy Prediction</h3>
+                              <p class="color-white">In this individual project, I engineered two deep learning models—an Artificial Neural Network (ANN) and a Residual Neural Network—specifically designed for predicting molecular energies within the ANI1 dataset. To enhance the models' understanding of molecular structures, I employed the Many Body Tensor Representation, a method encoding structures through a distribution of various structural motifs. Leveraging Python packages, including numpy, scikit-learn, and PyTorch, implemented and fine-tuned both the ANN and ResNet models.</p>
+                              <p><a href="https://github.com/koreogundele/chem277b-final-project">View GitHub repository</a></p>
+                    </div>
+               </div>
+
+               <div class="col-md-3 col-sm-6">
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.2s">
+                         <i class="fa fa-paper-plane"></i>
+                              <h3>Air Quality Prediction Across the USA</h3>
+                              <p class="color-white">As a participant in a collaborative team effort, I played a key role in modeling air quality across US counties, employing a combination of data analysis and machine learning techniques. My responsibilities included data cleaning, thorough analysis, and the construction of a linear regression model. Leveraging Python libraries such as NumPy, Pandas, seaborn, matplotlib, and scikit-learn, my team successfully conducted a comprehensive analysis of emission data. The application of these tools allowed for the development of a predictive air quality model, providing valuable insights for environmental monitoring.</p>
+                              <p><a href="https://github.com/EnviroTechSean/TeamPunchParty">View GitHub repository</a></p>
+                    </div>
+               </div>
+
+               <div class="bg-dark col-md-3 col-sm-6">
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.6s">
+                         <i class="fa fa-table"></i>
+                              <h3>Cellular Automata Model in C++</h3>
+                              <p class="color-white">To delve into the dynamics of changing allele frequencies in a population, I embarked on a collaborative project where we designed and implemented a C++ cellular automata model. Working effectively with classmates, I utilized Python libraries (seaborn, matplotlib) to create insightful visualizations that enriched the project. This journey not only deepened my understanding of population genetics and computational modeling techniques but also honed my programming skills in diverse languages (C++, Python) and strengthened my ability to collaborate effectively and present research findings accurately.</p>
+                              <p><a href="https://github.com/franbiancaoca/chem274b-finalproject">View GitHub repository</a></p>
+                    </div>
+               </div>
+
+               <div class="bg-white col-md-3 col-sm-6">
+                    <div class="wow fadeInUp service-thumb" data-wow-delay="1.8s">
+                         <i class="fa fa-cog"></i>
+                              <h3>Machine Learning & Deep Learning Repository</h3>
+                              <p>During my machine learning class, I explored a diverse range of machine learning and deep learning algorithms, including steepest descent, conjugate gradients, simulated annealing, clustering, ANNs, ResNets, RNNs, and LSTMs. Within this repository, I showcase practical skills in developing and implementing models and applying techniques like cross-entropy loss, Bayes theorem, and regularization for optimal performance. This portfolio underscores my understanding of various machine learning approaches and the versatility to apply them to different problems.</p>
+                              <p><a href="insert link">View GitHub repository</a></p>
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Education Section -->
+<section id="experience" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <!-- <div class="col-md-6 col-sm-6">
+                    <div class="background-image experience-img"></div>
+               </div> -->
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="color-white experience-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+                              <h1>Education</h1>
+                              <!-- <p class="color-white"></p> -->
+                         </div>
+
+                         <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+                              <div class="media-object media-left">
+                                   <i class="fa fa-graduation-cap"></i>
+                              </div>
+                              <div class="media-body">
+                                   <h3 class="media-heading">University of California, Berkeley <small>Expected Graduation: May 2024</small></h3>
+                                   <p class="color-white">Masters in Molecular Science and Software Engineering</p>
+                              </div>
+                         </div>
+                         <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+                              <div class="media-object media-left">
+                                   <i class="fa fa-graduation-cap"></i>
+                              </div>
+                              <div class="media-body">
+                                   <h3 class="media-heading">Florida Institute of Technology<small> August 2017 - May 2021</small></h3>
+                                   <p class="color-white">Bachelor of Science in Biomedical Science</p>
+                              </div>
+                         </div>
+
+                         <div class="wow fadeInUp section-title" data-wow-delay="1.6s">
+                              <h1>Recent Work Experience</h1>
+                         </div>
+                         <div class="wow fadeInUp color-white media" data-wow-delay="2.0s">
+                              <div class="media-object media-left">
+                                   <i class="fa fa-briefcase"></i>
+                              </div>
+                              <div class="media-body">
+                                   <h3 class="media-heading">Pivotal Life Sciences <small>January – May 2024</small></h3>
+                                   <p class="color-white">Student Intern</p>
+                              </div>
+                         </div>
+                         <div class="wow fadeInUp color-white media" data-wow-delay="2.0s">
+                              <div class="media-object media-left">
+                                   <i class="fa fa-briefcase"></i>
+                              </div>
+                              <div class="media-body">
+                                   <h3 class="media-heading">Tempus Labs Inc<small> October 2022 – July 2023</small></h3>
+                                   <p class="color-white">Molecular Technologist I</p>
+                              </div>
+                         </div>
+
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Education Section -->
+<!-- 
+<section id="education" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="color-white education-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+                              <h1>My Education</h1>
+                              <p class="color-white">In cursus orci non ipsum gravida dignissim</p>
+                         </div>
+
+                         <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+                              <div class="media-object media-left">
+                                   <i class="fa fa-laptop"></i>
+                              </div>
+                              <div class="media-body">
+                                   <h3 class="media-heading">Master in Design <small>2012 Jan - 2014 May</small></h3>
+                                   <p class="color-white">Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien id orci ullamcorper dignissim eu in neque. </p>
+                              </div>
+                         </div>
+
+                         <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+                              <div class="media-object media-left">
+                                   <i class="fa fa-laptop"></i>
+                              </div>
+                              <div class="media-body">
+                                   <h3 class="media-heading">Bachelor of Arts <small>2008 May - 2011 Dec</small></h3>
+                                   <p class="color-white">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                              </div>
+                         </div>
+
+                    </div>
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="background-image kore-img"></div>
+               </div>
+
+          </div>
+     </div>
+</section> -->
+
+
+<!-- Contact Section
+
+<section id="contact" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-12">
+                    <div class="contact-form">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                              <h1 class="color-white">Say hello..</h1>
+                              <p class="color-white">Integer ut consectetur est. In cursus orci non ipsum gravida dignissim.</p>
+                         </div>
+
+                         <div id="contact-form">
+                              <form action="#template-mo" method="post">
+                                   <div class="wow fadeInUp" data-wow-delay="1s">
+                                        <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name">
+                                   </div>
+                                   <div class="wow fadeInUp" data-wow-delay="1.2s">
+                                        <input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
+                                   </div>
+                                   <div class="wow fadeInUp" data-wow-delay="1.4s">
+                                        <textarea name="message" rows="5" class="form-control" id="message" placeholder="Write your message..."></textarea>
+                                   </div>
+                                   <div class="wow fadeInUp col-md-6 col-sm-8" data-wow-delay="1.6s">
+                                        <input name="submit" type="submit" class="form-control" id="submit" value="Send">
+                                   </div>
+                              </form>
+                         </div>
+
+                    </div>
+               </div>
+
+               <div class="col-md-3 col-sm-6">
+                    <div class="background-image contact-img"></div>
+               </div>
+
+               <div class="bg-dark col-md-3 col-sm-6">
+                    <div class="contact-thumb">
+                         <div class="wow fadeInUp contact-info" data-wow-delay="0.6s">
+                              <h3 class="color-white">Visit my office</h3>
+                              <p>456 New Street 22000, New York City, USA</p>
+                         </div>
+
+                         <div class="wow fadeInUp contact-info" data-wow-delay="0.8s">
+                              <h3 class="color-white">Contact.</h3>
+                              <p><i class="fa fa-phone"></i> 01-0110-0220</p>
+                              <p><i class="fa fa-envelope-o"></i> <a href="mailto:hello@company.co">hello@company.co</a></p>
+                              <p><i class="fa fa-globe"></i> <a href="#">company.co</a></p>
+                         </div>
+
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section> -->
+
+
+<!-- Footer Section -->
+<section id="contact" class="parallax-section"></section>
+<footer>
+	<div class="container">
+		<div class="row">
+
+               <!-- <div class="col-sm-12 col-sm-12">
+                    <div class="wow fadeInUp footer-copyright" data-wow-delay="1.8s">
+                         <p>Copyright &copy; 2016 Your Company
+                    
+                    | Design: <a href="http://www.google.com/+templatemo" target="_parent">templatemo</a></p>
+                    </div> -->
+				<ul class="wow fadeInUp social-icon" data-wow-delay="0.01s">
+                         <li><p>olu.ogundele@outlook.com </p></li>
+                    </ul>
+                    <ul class="wow fadeInUp social-icon" data-wow-delay="0.01s">
+                         <li><a href="https://github.com/koreogundele" class="fa fa-github"></a></li>
+                         <li><a href="https://www.linkedin.com/in/olukorede-ogundele/" class="fa fa-linkedin"></a></li>
+                    </ul>
+               </div>
+			
+		</div>
+	</div>
+</footer>
+
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
 </html>
